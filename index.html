@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Олег Шатарський — розробка сучасних сайтів для малого бізнесу, майстрів та локальних брендів.">
+  <title>Олег Шатарський — розробка сайтів</title>
+  <style>
+    :root{--bg:#07090e;--card:#10151e;--text:#f4f6f8;--muted:#98a2b2;--line:#252d3a;--blue:#246bfd;--acid:#c9ff36}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}::selection{background:var(--acid);color:#090b0e}
+    .wrap{width:min(1180px,calc(100% - 48px));margin:auto}.top{height:88px;display:flex;align-items:center;border-bottom:1px solid var(--line);position:relative;z-index:3}
+    .logo{font-size:28px;font-weight:900;letter-spacing:-.1em}.logo i,.acid{color:var(--acid);font-style:normal}.top nav{display:flex;gap:34px;margin-left:auto;margin-right:36px;color:#cbd0d8}
+    .top nav a:hover{color:var(--acid)}.small-cta{border:1px solid #3267cc;padding:14px 18px;transition:.2s}.small-cta:hover{border-color:var(--acid);color:var(--acid)}
+    .hero{min-height:770px;padding:100px 0 60px;position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+    .hero:after{content:"";position:absolute;width:620px;height:620px;right:-200px;top:20px;background:radial-gradient(circle,rgba(36,107,253,.3),transparent 65%);z-index:-1}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:#a3acb9;font-weight:700;display:flex;align-items:center;gap:11px}.eyebrow:before{content:"";width:25px;height:2px;background:var(--acid);box-shadow:0 0 12px var(--acid)}
+    h1{font-size:clamp(52px,6vw,78px);letter-spacing:-.06em;line-height:1.01;margin:28px 0}h2{font-size:clamp(42px,5vw,66px);line-height:1.04;letter-spacing:-.05em;margin:22px 0 52px}
+    .lead{font-size:19px;line-height:1.65;color:var(--muted);max-width:590px}.actions{display:flex;gap:14px;margin:36px 0}.btn{min-height:60px;padding:0 24px;display:inline-flex;align-items:center;justify-content:space-between;gap:30px;font-weight:700;border:1px solid #376ed7;transition:.2s;cursor:pointer}
+    .btn:hover{transform:translateY(-3px)}.btn-main{background:var(--acid);border-color:var(--acid);color:#0a0c10}.btn-main:hover{background:#fff;border-color:#fff}.available{color:#acb4c0;display:flex;align-items:center;gap:10px}.available:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--acid);box-shadow:0 0 14px var(--acid)}
+    .art{height:500px;position:relative}.window{position:absolute;background:linear-gradient(145deg,#141b2a,#090d16);border:1px solid #2b3750;box-shadow:0 28px 60px #0009}.window.big{width:100%;height:315px;top:25px;right:0;border-radius:16px}.bar{height:55px;border-bottom:1px solid #293247;display:flex;gap:8px;align-items:center;padding:0 20px}.bar i{width:9px;height:9px;border-radius:50%;background:var(--blue)}.bar i:last-child{background:#52617a}
+    .mock{padding:36px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px}.lines span{display:block;height:8px;border-radius:5px;background:#304467;margin:13px 0}.lines span:first-child{width:52%;background:var(--blue)}.lines span:last-child{width:42%;background:var(--acid);margin-top:42px}.picture{height:175px;background:linear-gradient(145deg,#203766,#10192d);position:relative;overflow:hidden}.picture:after{content:"";position:absolute;width:150px;height:150px;background:#345690;transform:rotate(45deg);right:3px;bottom:-80px}
+    .lime-card{left:-25px;top:295px;width:345px;padding:29px;background:var(--acid);color:#0a0c10;transform:rotate(1deg)}.lime-card small,.lime-card strong{display:block}.lime-card small{letter-spacing:.13em;font-weight:800}.lime-card strong{font-size:25px;line-height:1.2;margin-top:18px}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);padding:34px 0;color:#b0b7c2}.benefits span{border-right:1px solid var(--line);padding:0 32px}.benefits span:first-child{padding-left:0}.benefits span:last-child{border:0}.benefits b{color:var(--acid);font-size:11px;margin-right:12px}
+    section.block{padding:115px 0}.dark2{background:#0b0e14}.services{border-top:1px solid var(--line)}.service{display:grid;grid-template-columns:60px 1fr 1fr 30px;gap:25px;align-items:center;min-height:160px;border-bottom:1px solid var(--line);transition:.2s}.service:hover{background:#111721;padding:0 18px}.service>span,.service>b{color:var(--acid)}.service h3{font-size:28px;margin:0}.service p{color:var(--muted);line-height:1.6}
+    .section-head{display:flex;justify-content:space-between;align-items:end}.section-head>p{color:var(--muted);max-width:400px;line-height:1.6;margin-bottom:58px}.projects{display:grid;grid-template-columns:1fr 1fr;gap:28px}.project{border:1px solid var(--line);background:var(--card);overflow:hidden}.visual{height:315px;padding:26px;position:relative}.visual.nails{background:#e6d4ca;color:#241b1a}.visual.barber{background:linear-gradient(135deg,#111,#342f28)}.visual.booking{grid-column:1/-1;background:#121a29}.visual small{letter-spacing:.12em}.visual h3{font-size:42px;line-height:1.03;margin:65px 0 25px}.visual a{display:inline-block;padding:12px 16px;background:#171312;color:#fff;font-size:12px}.visual.barber a{background:#d3b06c;color:#17130e}.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:60px}.slot{border:1px solid #33425a;padding:22px;height:125px;display:flex;flex-direction:column;justify-content:space-between}.slot.active{background:var(--acid);border-color:var(--acid);color:#0a0c10;transform:translateY(-12px)}.meta{padding:24px}.meta small{color:var(--acid);letter-spacing:.1em}.meta h3{font-size:27px;margin:8px 0}.meta p{color:var(--muted);line-height:1.55}
+    .about{display:grid;grid-template-columns:1.1fr .9fr;gap:80px}.about h2{margin:0}.about p{font-size:19px;line-height:1.7;color:#b5bbc5}.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:30px}.tags span{border:1px solid #313945;padding:10px 13px;color:#afb6c1;font-size:13px}
+    .contact{background:var(--acid);color:#090c10;padding:100px 0}.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:80px}.contact h2{margin-bottom:24px}.contact h2 .acid{color:var(--blue)}.contact-copy>p{line-height:1.65;max-width:540px}.socials{display:flex;gap:10px;margin-top:30px}.socials a{border:1px solid #17200c55;padding:15px 18px;font-weight:700}.socials a:hover{background:#090c10;color:#fff}
+    form{background:#090c10;color:#fff;padding:36px}label{display:block;color:#929ba9;font-size:11px;text-transform:uppercase;letter-spacing:.09em;margin-bottom:23px}input,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #363d48;color:#fff;padding:11px 0;outline:none;resize:none}input:focus,textarea:focus{border-color:var(--acid)}form button{width:100%;background:var(--blue);color:#fff;border:0;margin-top:8px}
+    footer{min-height:100px;display:flex;align-items:center;justify-content:space-between;color:#7f8794;font-size:13px}.footlinks{display:flex;gap:22px}.footlinks a:hover{color:var(--acid)}
+    @media(max-width:900px){.top nav{display:none}.hero{grid-template-columns:1fr;padding-top:70px}.art{margin-top:20px}.section-head{display:block}.section-head>p{margin-bottom:40px}.contact-grid,.about{grid-template-columns:1fr;gap:35px}}
+    @media(max-width:620px){.wrap{width:min(100% - 32px,1180px)}.small-cta{font-size:12px;padding:12px}.hero{padding-top:55px}h1{font-size:46px}.actions{flex-direction:column}.btn{width:100%}.art{height:390px;transform:scale(.78);transform-origin:top left;width:128%}.benefits{grid-template-columns:1fr;padding:20px 0}.benefits span{border:0;padding:11px 0!important}.service{grid-template-columns:35px 1fr 20px;padding:25px 0}.service p{grid-column:2/-1;margin:0}.projects{grid-template-columns:1fr}.visual.booking{grid-column:auto}.slots{gap:7px}.slot{padding:12px}.socials{flex-direction:column}form{padding:27px 20px}footer p{display:none}.footlinks{gap:12px}}
+  </style>
+</head>
+<body>
+  <header class="top wrap">
+    <a class="logo" href="#top">ОШ<i>.</i></a>
+    <nav><a href="#services">Послуги</a><a href="#works">Роботи</a><a href="#about">Про мене</a><a href="#contacts">Контакти</a></nav>
+    <a class="small-cta" href="#contacts">Обговорити проєкт ↗</a>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="top">
+      <div>
+        <p class="eyebrow">Олег Шатарський • WEB-розробник</p>
+        <h1>Створюю сайти,<br>які допомагають<br>бізнесу <span class="acid">зростати</span></h1>
+        <p class="lead">Сучасний дизайн, зрозуміла структура та зручність для ваших клієнтів. Від першої ідеї до готового сайту.</p>
+        <div class="actions"><a class="btn btn-main" href="#contacts">Обговорити проєкт <span>↗</span></a><a class="btn" href="#works">Переглянути роботи <span>↓</span></a></div>
+        <p class="available">Відкритий до нових проєктів</p>
+      </div>
+      <div class="art" aria-hidden="true">
+        <div class="window big"><div class="bar"><i></i><i></i><i></i></div><div class="mock"><div class="lines"><span></span><span></span><span></span><span></span></div><div class="picture"></div></div></div>
+        <div class="window lime-card"><small>РОЗРОБКА САЙТІВ</small><strong>Ідея → Дизайн<br>→ Готовий сайт</strong></div>
+      </div>
+      <div class="benefits" style="grid-column:1/-1"><span><b>01</b> Розробка під ключ</span><span><b>02</b> Адаптивність</span><span><b>03</b> Підтримка після запуску</span></div>
+    </section>
+
+    <div class="dark2"><section class="block wrap" id="services">
+      <p class="eyebrow">Що я роблю</p><h2>Сайт, який працює<br><span class="acid">на ваш бізнес</span></h2>
+      <div class="services">
+        <article class="service"><span>01</span><h3>Сайт для бізнесу</h3><p>Презентую ваші послуги, переваги та допомагаю клієнту швидко зробити наступний крок.</p><b>↗</b></article>
+        <article class="service"><span>02</span><h3>Онлайн-запис</h3><p>Додаю зручний запис на послуги, календар, повідомлення та інтеграцію з EasyWeek.</p><b>↗</b></article>
+        <article class="service"><span>03</span><h3>Адаптивний дизайн</h3><p>Сайт однаково добре виглядає та працює на телефоні, планшеті й комп’ютері.</p><b>↗</b></article>
+      </div>
+    </section></div>
+
+    <section class="block wrap" id="works">
+      <div class="section-head"><div><p class="eyebrow">Вибрані роботи</p><h2>Проєкти та <span class="acid">концепти</span></h2></div><p>Кожен сайт створюю з фокусом на бізнес-завдання, зрозумілість і результат.</p></div>
+      <div class="projects">
+        <article class="project"><div class="visual nails"><small>КРАСА В ДЕТАЛЯХ</small><h3>Манікюр,<br>який пасує тобі</h3><a>Записатися онлайн ↗</a></div><div class="meta"><small>BEAUTY • ОНЛАЙН-ЗАПИС</small><h3>Nail Studio</h3><p>Сайт майстра манікюру з календарем, вибором часу та формою запису.</p></div></article>
+        <article class="project"><div class="visual barber"><small>BLACK CUT</small><h3>Твій стиль.<br>Твої правила.</h3><a>Обрати майстра ↗</a></div><div class="meta"><small>BARBERSHOP • ЛЕНДИНГ</small><h3>Black Cut</h3><p>Стильна сторінка барбершопу з послугами, майстрами та швидким записом.</p></div></article>
+        <article class="project" style="grid-column:1/-1"><div class="visual booking"><small>BOOKING / СЬОГОДНІ</small><div class="slots"><div class="slot"><small>09:00</small><b>Вільно</b></div><div class="slot active"><small>11:00</small><b>Обрано</b></div><div class="slot"><small>13:00</small><b>Вільно</b></div></div></div><div class="meta"><small>СЕРВІС • ЗАПИС КЛІЄНТІВ</small><h3>Booking Flow</h3><p>Прототип системи запису з вільними слотами та повідомленнями в Telegram.</p></div></article>
+      </div>
+    </section>
+
+    <div class="dark2"><section class="block wrap" id="about"><p class="eyebrow">Про мене</p><div class="about"><h2>Допомагаю бізнесу виглядати <span class="acid">впевнено</span> в інтернеті.</h2><div><p>Мене звати Олег. Я розробляю сучасні сайти для малого бізнесу, майстрів та локальних брендів.</p><p>Пояснюю все просто, показую результат на кожному етапі та залишаюся на зв’язку після запуску.</p><div class="tags"><span>Сучасний дизайн</span><span>Чіткі терміни</span><span>Без зайвої складності</span></div></div></div></section></div>
+
+    <section class="contact" id="contacts"><div class="wrap contact-grid">
+      <div class="contact-copy"><p class="eyebrow">Є ідея?</p><h2>Давайте створимо<br>щось <span class="acid">сильне</span> разом.</h2><p>Заповніть коротку форму — після натискання відкриється Telegram із готовим текстом заявки.</p><div class="socials"><a href="https://t.me/Oleghshatarsky" target="_blank" rel="noreferrer">Telegram ↗</a><a href="https://www.instagram.com/olegshatarskii/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div>
+      <form id="brief-form">
+        <label>Як вас звати?<input name="name" placeholder="Ваше ім’я" required></label>
+        <label>Для якого бізнесу потрібен сайт?<input name="business" placeholder="Наприклад, барбершоп" required></label>
+        <label>Коротко про завдання<textarea name="details" placeholder="Що має бути на сайті?" rows="3" required></textarea></label>
+        <button class="btn" type="submit">Написати в Telegram <span>↗</span></button>
+      </form>
+    </div></section>
+  </main>
+
+  <footer class="wrap"><a class="logo" href="#top">ОШ<i>.</i></a><p>© 2026 Олег Шатарський. Розробка сайтів.</p><div class="footlinks"><a href="https://t.me/Oleghshatarsky" target="_blank" rel="noreferrer">Telegram</a><a href="https://www.instagram.com/olegshatarskii/" target="_blank" rel="noreferrer">Instagram</a></div></footer>
+
+  <script>
+    document.getElementById('brief-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const text = `Привіт, Олег! Мене звати ${data.get('name')}. Потрібен сайт для: ${data.get('business')}. ${data.get('details')}`;
+      window.open('https://t.me/Oleghshatarsky?text=' + encodeURIComponent(text), '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
