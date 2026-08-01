@@ -32,20 +32,25 @@ const areaRange = document.getElementById('area-range');
 const buildType = document.getElementById('build-type');
 const areaValue = document.getElementById('area-value');
 const calcTotal = document.getElementById('calc-total');
+const isEnglish = document.documentElement.lang === 'en';
 
 function calculateBuild() {
   if (!areaRange || !buildType || !areaValue || !calcTotal) return;
   const area = Number(areaRange.value);
   const rate = Number(buildType.value);
-  areaValue.textContent = `${area} м²`;
-  calcTotal.textContent = `${(area * rate).toLocaleString('uk-UA')} ₴`;
+  areaValue.textContent = `${area} ${isEnglish ? 'm²' : 'м²'}`;
+  calcTotal.textContent = `${(area * rate).toLocaleString(isEnglish ? 'en-GB' : 'uk-UA')} ₴`;
 }
 
 areaRange?.addEventListener('input', calculateBuild);
 buildType?.addEventListener('change', calculateBuild);
 calculateBuild();
 
-const packages = {
+const packages = isEnglish ? {
+  start: ['Start Clean', 'from 1,900 ₴', 'Complete wash, wheel cleaning, vacuuming and plastic care.'],
+  pro: ['Pro Detail', 'from 4,900 ₴', 'Deep interior clean, protective wax and restored exterior gloss.'],
+  ultimate: ['Ultimate', 'from 11,900 ₴', 'Interior detailing, paint correction and ceramic protection.']
+} : {
   start: ['Start Clean', 'від 1 900 ₴', 'Комплексне миття, очищення дисків, пилосос і догляд за пластиком.'],
   pro: ['Pro Detail', 'від 4 900 ₴', 'Глибоке очищення салону, захисний віск і відновлення зовнішнього блиску.'],
   ultimate: ['Ultimate', 'від 11 900 ₴', 'Детейлінг салону, полірування кузова та керамічний захист.']

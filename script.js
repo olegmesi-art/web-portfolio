@@ -27,6 +27,9 @@ document.querySelectorAll('.benefit-grid article, .project, .service-list articl
 document.getElementById('brief-form')?.addEventListener('submit', event => {
   event.preventDefault();
   const data = new FormData(event.currentTarget);
-  const text = `Вітаю, SHTR Studio! Мене звати ${data.get('name')}. Сфера бізнесу: ${data.get('business')}. Потрібно: ${data.get('details')}`;
+  const isEnglish = document.documentElement.lang === 'en';
+  const text = isEnglish
+    ? `Hello, SHTR Studio! My name is ${data.get('name')}. Business sector: ${data.get('business')}. I need: ${data.get('details')}`
+    : `Вітаю, SHTR Studio! Мене звати ${data.get('name')}. Сфера бізнесу: ${data.get('business')}. Потрібно: ${data.get('details')}`;
   window.open(`https://t.me/Oleghshatarsky?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
 });
