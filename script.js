@@ -1,0 +1,32 @@
+const menuButton = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.main-nav');
+
+menuButton?.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
+});
+
+document.querySelectorAll('.main-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+  });
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.benefit-grid article, .project, .service-list article, .timeline article').forEach(item => {
+  item.classList.add('reveal');
+  observer.observe(item);
+});
+
+document.getElementById('brief-form')?.addEventListener('submit', event => {
+  event.preventDefault();
+  const data = new FormData(event.currentTarget);
+  const text = `Вітаю, SHTR Studio! Мене звати ${data.get('name')}. Сфера бізнесу: ${data.get('business')}. Потрібно: ${data.get('details')}`;
+  window.open(`https://t.me/Oleghshatarsky?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+});

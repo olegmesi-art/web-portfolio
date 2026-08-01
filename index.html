@@ -3,98 +3,275 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Олег Шатарський — розробка сучасних сайтів для малого бізнесу, майстрів та локальних брендів.">
-  <title>Олег Шатарський — розробка сайтів</title>
-  <style>
-    :root{--bg:#07090e;--card:#10151e;--text:#f4f6f8;--muted:#98a2b2;--line:#252d3a;--blue:#246bfd;--acid:#c9ff36}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
-    a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}::selection{background:var(--acid);color:#090b0e}
-    .wrap{width:min(1180px,calc(100% - 48px));margin:auto}.top{height:88px;display:flex;align-items:center;border-bottom:1px solid var(--line);position:relative;z-index:3}
-    .logo{font-size:28px;font-weight:900;letter-spacing:-.1em}.logo i,.acid{color:var(--acid);font-style:normal}.top nav{display:flex;gap:34px;margin-left:auto;margin-right:36px;color:#cbd0d8}
-    .top nav a:hover{color:var(--acid)}.small-cta{border:1px solid #3267cc;padding:14px 18px;transition:.2s}.small-cta:hover{border-color:var(--acid);color:var(--acid)}
-    .hero{min-height:770px;padding:100px 0 60px;position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
-    .hero:after{content:"";position:absolute;width:620px;height:620px;right:-200px;top:20px;background:radial-gradient(circle,rgba(36,107,253,.3),transparent 65%);z-index:-1}
-    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:#a3acb9;font-weight:700;display:flex;align-items:center;gap:11px}.eyebrow:before{content:"";width:25px;height:2px;background:var(--acid);box-shadow:0 0 12px var(--acid)}
-    h1{font-size:clamp(52px,6vw,78px);letter-spacing:-.06em;line-height:1.01;margin:28px 0}h2{font-size:clamp(42px,5vw,66px);line-height:1.04;letter-spacing:-.05em;margin:22px 0 52px}
-    .lead{font-size:19px;line-height:1.65;color:var(--muted);max-width:590px}.actions{display:flex;gap:14px;margin:36px 0}.btn{min-height:60px;padding:0 24px;display:inline-flex;align-items:center;justify-content:space-between;gap:30px;font-weight:700;border:1px solid #376ed7;transition:.2s;cursor:pointer}
-    .btn:hover{transform:translateY(-3px)}.btn-main{background:var(--acid);border-color:var(--acid);color:#0a0c10}.btn-main:hover{background:#fff;border-color:#fff}.available{color:#acb4c0;display:flex;align-items:center;gap:10px}.available:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--acid);box-shadow:0 0 14px var(--acid)}
-    .art{height:500px;position:relative}.window{position:absolute;background:linear-gradient(145deg,#141b2a,#090d16);border:1px solid #2b3750;box-shadow:0 28px 60px #0009}.window.big{width:100%;height:315px;top:25px;right:0;border-radius:16px}.bar{height:55px;border-bottom:1px solid #293247;display:flex;gap:8px;align-items:center;padding:0 20px}.bar i{width:9px;height:9px;border-radius:50%;background:var(--blue)}.bar i:last-child{background:#52617a}
-    .mock{padding:36px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px}.lines span{display:block;height:8px;border-radius:5px;background:#304467;margin:13px 0}.lines span:first-child{width:52%;background:var(--blue)}.lines span:last-child{width:42%;background:var(--acid);margin-top:42px}.picture{height:175px;background:linear-gradient(145deg,#203766,#10192d);position:relative;overflow:hidden}.picture:after{content:"";position:absolute;width:150px;height:150px;background:#345690;transform:rotate(45deg);right:3px;bottom:-80px}
-    .lime-card{left:-25px;top:295px;width:345px;padding:29px;background:var(--acid);color:#0a0c10;transform:rotate(1deg)}.lime-card small,.lime-card strong{display:block}.lime-card small{letter-spacing:.13em;font-weight:800}.lime-card strong{font-size:25px;line-height:1.2;margin-top:18px}
-    .benefits{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);padding:34px 0;color:#b0b7c2}.benefits span{border-right:1px solid var(--line);padding:0 32px}.benefits span:first-child{padding-left:0}.benefits span:last-child{border:0}.benefits b{color:var(--acid);font-size:11px;margin-right:12px}
-    section.block{padding:115px 0}.dark2{background:#0b0e14}.services{border-top:1px solid var(--line)}.service{display:grid;grid-template-columns:60px 1fr 1fr 30px;gap:25px;align-items:center;min-height:160px;border-bottom:1px solid var(--line);transition:.2s}.service:hover{background:#111721;padding:0 18px}.service>span,.service>b{color:var(--acid)}.service h3{font-size:28px;margin:0}.service p{color:var(--muted);line-height:1.6}
-    .section-head{display:flex;justify-content:space-between;align-items:end}.section-head>p{color:var(--muted);max-width:400px;line-height:1.6;margin-bottom:58px}.projects{display:grid;grid-template-columns:1fr 1fr;gap:28px}.project{border:1px solid var(--line);background:var(--card);overflow:hidden}.visual{height:315px;padding:26px;position:relative}.visual.nails{background:#e6d4ca;color:#241b1a}.visual.barber{background:linear-gradient(135deg,#111,#342f28)}.visual.booking{grid-column:1/-1;background:#121a29}.visual small{letter-spacing:.12em}.visual h3{font-size:42px;line-height:1.03;margin:65px 0 25px}.visual a{display:inline-block;padding:12px 16px;background:#171312;color:#fff;font-size:12px}.visual.barber a{background:#d3b06c;color:#17130e}.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:60px}.slot{border:1px solid #33425a;padding:22px;height:125px;display:flex;flex-direction:column;justify-content:space-between}.slot.active{background:var(--acid);border-color:var(--acid);color:#0a0c10;transform:translateY(-12px)}.meta{padding:24px}.meta small{color:var(--acid);letter-spacing:.1em}.meta h3{font-size:27px;margin:8px 0}.meta p{color:var(--muted);line-height:1.55}
-    .about{display:grid;grid-template-columns:1.1fr .9fr;gap:80px}.about h2{margin:0}.about p{font-size:19px;line-height:1.7;color:#b5bbc5}.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:30px}.tags span{border:1px solid #313945;padding:10px 13px;color:#afb6c1;font-size:13px}
-    .contact{background:var(--acid);color:#090c10;padding:100px 0}.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:80px}.contact h2{margin-bottom:24px}.contact h2 .acid{color:var(--blue)}.contact-copy>p{line-height:1.65;max-width:540px}.socials{display:flex;gap:10px;margin-top:30px}.socials a{border:1px solid #17200c55;padding:15px 18px;font-weight:700}.socials a:hover{background:#090c10;color:#fff}
-    form{background:#090c10;color:#fff;padding:36px}label{display:block;color:#929ba9;font-size:11px;text-transform:uppercase;letter-spacing:.09em;margin-bottom:23px}input,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #363d48;color:#fff;padding:11px 0;outline:none;resize:none}input:focus,textarea:focus{border-color:var(--acid)}form button{width:100%;background:var(--blue);color:#fff;border:0;margin-top:8px}
-    footer{min-height:100px;display:flex;align-items:center;justify-content:space-between;color:#7f8794;font-size:13px}.footlinks{display:flex;gap:22px}.footlinks a:hover{color:var(--acid)}
-    @media(max-width:900px){.top nav{display:none}.hero{grid-template-columns:1fr;padding-top:70px}.art{margin-top:20px}.section-head{display:block}.section-head>p{margin-bottom:40px}.contact-grid,.about{grid-template-columns:1fr;gap:35px}}
-    @media(max-width:620px){.wrap{width:min(100% - 32px,1180px)}.small-cta{font-size:12px;padding:12px}.hero{padding-top:55px}h1{font-size:46px}.actions{flex-direction:column}.btn{width:100%}.art{height:390px;transform:scale(.78);transform-origin:top left;width:128%}.benefits{grid-template-columns:1fr;padding:20px 0}.benefits span{border:0;padding:11px 0!important}.service{grid-template-columns:35px 1fr 20px;padding:25px 0}.service p{grid-column:2/-1;margin:0}.projects{grid-template-columns:1fr}.visual.booking{grid-column:auto}.slots{gap:7px}.slot{padding:12px}.socials{flex-direction:column}form{padding:27px 20px}footer p{display:none}.footlinks{gap:12px}}
-  </style>
+  <meta name="description" content="SHTR Studio — сучасні сайти для бізнесу, які підсилюють бренд, викликають довіру та допомагають отримувати більше звернень.">
+  <meta name="theme-color" content="#f5f5f2">
+  <title>SHTR Studio — сайти, які підсилюють бізнес</title>
+  <link rel="icon" type="image/png" href="assets/shtr-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="top wrap">
-    <a class="logo" href="#top">ОШ<i>.</i></a>
-    <nav><a href="#services">Послуги</a><a href="#works">Роботи</a><a href="#about">Про мене</a><a href="#contacts">Контакти</a></nav>
-    <a class="small-cta" href="#contacts">Обговорити проєкт ↗</a>
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="SHTR Studio — на головну">
+        <img class="brand-logo" src="assets/shtr-logo.png" alt="Логотип SHTR Studio">
+        <span class="brand-name">SHTR<small>STUDIO</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Головна навігація">
+        <a href="#why">Навіщо сайт</a>
+        <a href="#services">Послуги</a>
+        <a href="#works">Роботи</a>
+        <a href="#process">Як працюємо</a>
+      </nav>
+      <a class="header-cta" href="#contact">Обговорити проєкт <span>↗</span></a>
+    </div>
   </header>
 
   <main>
-    <section class="hero wrap" id="top">
-      <div>
-        <p class="eyebrow">Олег Шатарський • WEB-розробник</p>
-        <h1>Створюю сайти,<br>які допомагають<br>бізнесу <span class="acid">зростати</span></h1>
-        <p class="lead">Сучасний дизайн, зрозуміла структура та зручність для ваших клієнтів. Від першої ідеї до готового сайту.</p>
-        <div class="actions"><a class="btn btn-main" href="#contacts">Обговорити проєкт <span>↗</span></a><a class="btn" href="#works">Переглянути роботи <span>↓</span></a></div>
-        <p class="available">Відкритий до нових проєктів</p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span></span> Сайти для бізнесу • Україна</p>
+          <h1>Ваш бізнес уже шукають <em>онлайн.</em></h1>
+          <p class="hero-lead">Питання лише в тому, кого клієнт побачить першим: ваш професійний сайт чи конкурента.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Хочу сайт для бізнесу <span>↗</span></a>
+            <a class="button button-ghost" href="#works">Переглянути роботи <span>↓</span></a>
+          </div>
+          <div class="hero-notes">
+            <span><i></i> Швидко</span>
+            <span><i></i> Якісно</span>
+            <span><i></i> Без зайвих переплат</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Приклад сучасного бізнес-сайту">
+          <div class="blue-orbit"></div>
+          <div class="desktop-card">
+            <div class="browser-line"><span></span><span></span><span></span><b>yourbrand.ua</b></div>
+            <div class="mock-nav"><strong>FORMA</strong><small>Про нас&nbsp;&nbsp; Послуги&nbsp;&nbsp; Контакти</small></div>
+            <div class="mock-body">
+              <div>
+                <span class="mock-label">ВАШ БІЗНЕС — ОНЛАЙН</span>
+                <h2>Бренд, якому довіряють.</h2>
+                <p>Сильна презентація. Зрозумілі послуги. Простий шлях до заявки.</p>
+                <button type="button">ЗАПИСАТИСЯ</button>
+              </div>
+              <div class="mock-photo">
+                <div class="shape-one"></div><div class="shape-two"></div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-card">
+            <div class="phone-notch"></div>
+            <div class="phone-brand">SHTR.</div>
+            <div class="phone-image"></div>
+            <strong>Ваш бізнес<br>у телефоні клієнта</strong>
+            <span>Дивитися послуги →</span>
+          </div>
+          <div class="result-card"><small>РЕЗУЛЬТАТ</small><strong>Довіра → Звернення → Продаж</strong></div>
+        </div>
       </div>
-      <div class="art" aria-hidden="true">
-        <div class="window big"><div class="bar"><i></i><i></i><i></i></div><div class="mock"><div class="lines"><span></span><span></span><span></span><span></span></div><div class="picture"></div></div></div>
-        <div class="window lime-card"><small>РОЗРОБКА САЙТІВ</small><strong>Ідея → Дизайн<br>→ Готовий сайт</strong></div>
+      <div class="container hero-strip">
+        <span><b>01</b> Престиж бренду</span>
+        <span><b>02</b> Більше довіри</span>
+        <span><b>03</b> Нові звернення 24/7</span>
+        <span><b>04</b> Уся інформація в одному місці</span>
       </div>
-      <div class="benefits" style="grid-column:1/-1"><span><b>01</b> Розробка під ключ</span><span><b>02</b> Адаптивність</span><span><b>03</b> Підтримка після запуску</span></div>
     </section>
 
-    <div class="dark2"><section class="block wrap" id="services">
-      <p class="eyebrow">Що я роблю</p><h2>Сайт, який працює<br><span class="acid">на ваш бізнес</span></h2>
-      <div class="services">
-        <article class="service"><span>01</span><h3>Сайт для бізнесу</h3><p>Презентую ваші послуги, переваги та допомагаю клієнту швидко зробити наступний крок.</p><b>↗</b></article>
-        <article class="service"><span>02</span><h3>Онлайн-запис</h3><p>Додаю зручний запис на послуги, календар, повідомлення та інтеграцію з EasyWeek.</p><b>↗</b></article>
-        <article class="service"><span>03</span><h3>Адаптивний дизайн</h3><p>Сайт однаково добре виглядає та працює на телефоні, планшеті й комп’ютері.</p><b>↗</b></article>
-      </div>
-    </section></div>
+    <section class="statement section-pad" id="why">
+      <div class="container">
+        <p class="section-kicker">Сайт + Instagram</p>
+        <div class="statement-grid">
+          <h2>Instagram привертає увагу.<br><span>Сайт перетворює її на довіру і заявку.</span></h2>
+          <p>Соцмережі знайомлять клієнта з вами. Сайт пояснює цінність, показує послуги, ціни й докази роботи — і веде людину до конкретної дії.</p>
+        </div>
 
-    <section class="block wrap" id="works">
-      <div class="section-head"><div><p class="eyebrow">Вибрані роботи</p><h2>Проєкти та <span class="acid">концепти</span></h2></div><p>Кожен сайт створюю з фокусом на бізнес-завдання, зрозумілість і результат.</p></div>
-      <div class="projects">
-        <article class="project"><div class="visual nails"><small>КРАСА В ДЕТАЛЯХ</small><h3>Манікюр,<br>який пасує тобі</h3><a>Записатися онлайн ↗</a></div><div class="meta"><small>BEAUTY • ОНЛАЙН-ЗАПИС</small><h3>Nail Studio</h3><p>Сайт майстра манікюру з календарем, вибором часу та формою запису.</p></div></article>
-        <article class="project"><div class="visual barber"><small>BLACK CUT</small><h3>Твій стиль.<br>Твої правила.</h3><a>Обрати майстра ↗</a></div><div class="meta"><small>BARBERSHOP • ЛЕНДИНГ</small><h3>Black Cut</h3><p>Стильна сторінка барбершопу з послугами, майстрами та швидким записом.</p></div></article>
-        <article class="project" style="grid-column:1/-1"><div class="visual booking"><small>BOOKING / СЬОГОДНІ</small><div class="slots"><div class="slot"><small>09:00</small><b>Вільно</b></div><div class="slot active"><small>11:00</small><b>Обрано</b></div><div class="slot"><small>13:00</small><b>Вільно</b></div></div></div><div class="meta"><small>СЕРВІС • ЗАПИС КЛІЄНТІВ</small><h3>Booking Flow</h3><p>Прототип системи запису з вільними слотами та повідомленнями в Telegram.</p></div></article>
+        <div class="compare">
+          <article class="compare-card muted-card">
+            <div class="compare-top"><span>Лише соціальні мережі</span><b>01</b></div>
+            <h3>Клієнт шукає інформацію сам</h3>
+            <ul>
+              <li>ціни губляться серед сторіс</li>
+              <li>послуги розкидані у дописах</li>
+              <li>немає чіткого шляху до запису</li>
+              <li>бізнес складніше знайти в Google</li>
+            </ul>
+          </article>
+          <div class="compare-plus">+</div>
+          <article class="compare-card strong-card">
+            <div class="compare-top"><span>Instagram + власний сайт</span><b>02</b></div>
+            <h3>Бренд виглядає впевнено</h3>
+            <ul>
+              <li>послуги, ціни та роботи в одному місці</li>
+              <li>запис або заявка за кілька натискань</li>
+              <li>окрема адреса, яка належить бренду</li>
+              <li>готова сторінка для реклами та Google</li>
+            </ul>
+          </article>
+        </div>
+        <p class="compare-conclusion">Сайт не замінює Instagram — він <strong>підсилює його</strong> та допомагає не втрачати зацікавлених клієнтів.</p>
       </div>
     </section>
 
-    <div class="dark2"><section class="block wrap" id="about"><p class="eyebrow">Про мене</p><div class="about"><h2>Допомагаю бізнесу виглядати <span class="acid">впевнено</span> в інтернеті.</h2><div><p>Мене звати Олег. Я розробляю сучасні сайти для малого бізнесу, майстрів та локальних брендів.</p><p>Пояснюю все просто, показую результат на кожному етапі та залишаюся на зв’язку після запуску.</p><div class="tags"><span>Сучасний дизайн</span><span>Чіткі терміни</span><span>Без зайвої складності</span></div></div></div></section></div>
+    <section class="benefits section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">Що отримує бізнес</p><h2>Не просто сторінку.<br><span>Інструмент для росту.</span></h2></div>
+          <p>Кожен блок сайту має завдання: пояснити, переконати, прибрати сумніви й підвести клієнта до звернення.</p>
+        </div>
+        <div class="benefit-grid">
+          <article><span>01</span><div class="benefit-icon">↗</div><h3>Сильніше перше враження</h3><p>Професійний сайт одразу підвищує рівень сприйняття компанії та її послуг.</p></article>
+          <article><span>02</span><div class="benefit-icon">◎</div><h3>Більше довіри</h3><p>Роботи, відгуки, команда й умови зібрані так, щоб клієнт швидше прийняв рішення.</p></article>
+          <article><span>03</span><div class="benefit-icon">24</div><h3>Менеджер, що працює 24/7</h3><p>Сайт відповідає на типові запитання і приймає заявки навіть тоді, коли ви зайняті.</p></article>
+          <article><span>04</span><div class="benefit-icon">⌕</div><h3>Нові канали клієнтів</h3><p>Сайт можна просувати в Google, рекламі, картах, Instagram і партнерських матеріалах.</p></article>
+          <article><span>05</span><div class="benefit-icon">→</div><h3>Простий шлях до заявки</h3><p>Кнопки запису, месенджери та форми ведуть клієнта до потрібної дії без зайвих кроків.</p></article>
+          <article><span>06</span><div class="benefit-icon">◆</div><h3>Актив бренду</h3><p>Власний сайт не залежить від стрічки соцмереж і працює на репутацію роками.</p></article>
+        </div>
+      </div>
+    </section>
 
-    <section class="contact" id="contacts"><div class="wrap contact-grid">
-      <div class="contact-copy"><p class="eyebrow">Є ідея?</p><h2>Давайте створимо<br>щось <span class="acid">сильне</span> разом.</h2><p>Заповніть коротку форму — після натискання відкриється Telegram із готовим текстом заявки.</p><div class="socials"><a href="https://t.me/Oleghshatarsky" target="_blank" rel="noreferrer">Telegram ↗</a><a href="https://www.instagram.com/olegshatarskii/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div>
-      <form id="brief-form">
-        <label>Як вас звати?<input name="name" placeholder="Ваше ім’я" required></label>
-        <label>Для якого бізнесу потрібен сайт?<input name="business" placeholder="Наприклад, барбершоп" required></label>
-        <label>Коротко про завдання<textarea name="details" placeholder="Що має бути на сайті?" rows="3" required></textarea></label>
-        <button class="btn" type="submit">Написати в Telegram <span>↗</span></button>
-      </form>
-    </div></section>
+    <section class="work-section section-pad" id="works">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div><p class="section-kicker">Приклади робіт</p><h2>Сайти для різних<br><span>сфер бізнесу.</span></h2></div>
+          <p>Натисніть на проєкт, щоб відкрити повний демонстраційний сайт і побачити структуру, дизайн та інтерактивні елементи.</p>
+        </div>
+
+        <div class="project-grid">
+          <a class="project project-beauty" href="demos/beauty/" target="_blank">
+            <div class="project-head"><span>01 / BEAUTY</span><b>Відкрити сайт ↗</b></div>
+            <div class="project-screen">
+              <div class="mini-browser"><span></span><span></span><span></span></div>
+              <div class="beauty-layout">
+                <small>ÉLAN BEAUTY</small><h3>Beauty that feels<br>like you.</h3><i>Записатися</i>
+                <div class="beauty-circle"></div>
+              </div>
+            </div>
+            <div class="project-copy"><h3>ÉLAN Beauty Studio</h3><p>Послуги, команда, портфоліо, прайс та онлайн-запис.</p></div>
+          </a>
+
+          <a class="project project-food" href="demos/restaurant/" target="_blank">
+            <div class="project-head"><span>02 / RESTAURANT</span><b>Відкрити сайт ↗</b></div>
+            <div class="project-screen">
+              <div class="mini-browser"><span></span><span></span><span></span></div>
+              <div class="food-layout"><small>VERDE</small><p>LOCAL · SEASONAL · HONEST</p><h3>Вечері, які<br>залишаються<br>у пам’яті.</h3><i>Забронювати стіл</i></div>
+            </div>
+            <div class="project-copy"><h3>VERDE Restaurant</h3><p>Концепція, меню з фільтрами, атмосфера та бронювання столу.</p></div>
+          </a>
+
+          <a class="project project-build" href="demos/construction/" target="_blank">
+            <div class="project-head"><span>03 / CONSTRUCTION</span><b>Відкрити сайт ↗</b></div>
+            <div class="project-screen">
+              <div class="mini-browser"><span></span><span></span><span></span></div>
+              <div class="build-layout"><small>KUB / HOUSE</small><h3>Архітектура,<br>що належить<br>життю.</h3><i>Розрахувати проєкт →</i><div class="house-shape"></div></div>
+            </div>
+            <div class="project-copy"><h3>KUB HOUSE</h3><p>Проєкти, послуги, процес і калькулятор орієнтовної вартості.</p></div>
+          </a>
+
+          <a class="project project-auto" href="demos/detailing/" target="_blank">
+            <div class="project-head"><span>04 / AUTO DETAILING</span><b>Відкрити сайт ↗</b></div>
+            <div class="project-screen">
+              <div class="mini-browser"><span></span><span></span><span></span></div>
+              <div class="auto-layout"><small>BLACKLINE</small><p>DETAILING STUDIO</p><h3>Досконалість<br>у кожній лінії.</h3><i>Обрати пакет</i><div class="car-line"></div></div>
+            </div>
+            <div class="project-copy"><h3>BLACKLINE Detailing</h3><p>Пакети послуг, ціни, результати, FAQ та форма запису.</p></div>
+          </a>
+
+          <a class="project project-nails" href="https://nail-booking-lo2c.onrender.com" target="_blank" rel="noreferrer">
+            <div class="project-head"><span>05 / NAIL BOOKING</span><b>Відкрити робочий сайт ↗</b></div>
+            <div class="project-screen">
+              <div class="mini-browser"><span></span><span></span><span></span></div>
+              <div class="nail-layout">
+                <div class="nail-copy"><small>NAIL STUDIO</small><h3>Твій манікюр.<br>Твій зручний час.</h3><i>Записатися онлайн →</i></div>
+                <div class="booking-preview"><b>Оберіть час</b><span>09:00</span><span class="selected">11:00</span><span>13:00</span><span>15:00</span><small>Підтвердження одразу</small></div>
+              </div>
+            </div>
+            <div class="project-copy"><h3>Nail Booking</h3><p>Реальний сайт із календарем, часовими слотами, формою запису, повідомленнями та адміністративною частиною.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section section-pad" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">Що створюємо</p><h2>Рішення під завдання<br><span>вашого бізнесу.</span></h2></div>
+          <p>Від компактної презентації до повноцінного сайту з каталогом, онлайн-записом та інтеграціями.</p>
+        </div>
+        <div class="service-list">
+          <article><span>01</span><h3>Лендінг</h3><p>Одна сильна сторінка для послуги, реклами, спеціальної пропозиції або нового продукту.</p><b>Від ідеї до запуску</b></article>
+          <article><span>02</span><h3>Сайт для бізнесу</h3><p>Повна презентація компанії: послуги, команда, роботи, відгуки, ціни, контакти та заявки.</p><b>Найкраще для бренду</b></article>
+          <article><span>03</span><h3>Сайт з онлайн-записом</h3><p>Підключення EasyWeek, SimplyBook, Fresha або іншого сервісу, який зручно вести власнику.</p><b>Для сфери послуг</b></article>
+          <article><span>04</span><h3>Каталог / магазин</h3><p>Товари, категорії, фільтри, кошик, оплата й зручний процес оформлення замовлення.</p><b>Для продажів онлайн</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section section-pad" id="process">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div><p class="section-kicker">Як усе відбувається</p><h2>Від першої розмови<br><span>до готового сайту.</span></h2></div>
+          <p>Ви бачите результат на кожному етапі й розумієте, за що платите.</p>
+        </div>
+        <div class="timeline">
+          <article><span>01</span><h3>Знайомство</h3><p>Обговорюємо бізнес, клієнтів, послуги, цілі та бажаний результат.</p></article>
+          <article><span>02</span><h3>Структура</h3><p>Визначаємо сторінки, блоки, тексти й найкоротший шлях клієнта до заявки.</p></article>
+          <article><span>03</span><h3>Дизайн і розробка</h3><p>Створюємо унікальний вигляд, адаптуємо під телефон і додаємо функції.</p></article>
+          <article><span>04</span><h3>Запуск</h3><p>Перевіряємо все, підключаємо домен, аналітику та показуємо, як користуватися.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad">
+      <div class="container faq-grid">
+        <div><p class="section-kicker">Коротко про важливе</p><h2>Часті<br><span>запитання.</span></h2></div>
+        <div class="faq-list">
+          <details open><summary>Скільки коштує розробка сайту?<span>+</span></summary><p>Ціна залежить від кількості сторінок, функцій та матеріалів. Після короткої розмови ви отримаєте зрозумілий обсяг робіт і фіксовану пропозицію без прихованих доплат.</p></details>
+          <details><summary>Скільки часу займає створення?<span>+</span></summary><p>Невеликий сайт можна підготувати за кілька днів. Більші проєкти потребують більше часу на структуру, контент, дизайн та перевірку.</p></details>
+          <details><summary>Чи можна додати онлайн-запис?<span>+</span></summary><p>Так. Підключимо EasyWeek, SimplyBook, Fresha або іншу систему. Акаунт і тариф сервісу належатимуть вашому бізнесу.</p></details>
+          <details><summary>Що потрібно від мене для старту?<span>+</span></summary><p>Коротко розповісти про бізнес, надіслати логотип, фото, список послуг і контакти. Якщо матеріалів бракує — допоможемо визначити, що підготувати.</p></details>
+          <details><summary>Сайт працюватиме на телефоні?<span>+</span></summary><p>Так. Кожен проєкт адаптується під смартфони, планшети та комп’ютери й перевіряється перед запуском.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">Ваш наступний крок</p>
+          <h2>Поки клієнт думає —<br><span>сильний сайт переконує.</span></h2>
+          <p>Розкажіть, чим займається ваш бізнес. Запропонуємо структуру та покажемо, як сайт може працювати саме на ваші задачі.</p>
+          <div class="direct-links">
+            <a href="https://www.instagram.com/shtr.studio_/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
+            <a href="https://t.me/Oleghshatarsky" target="_blank" rel="noreferrer">Telegram <span>↗</span></a>
+          </div>
+        </div>
+        <form id="brief-form" class="brief-form">
+          <label>Ваше ім’я<input type="text" name="name" placeholder="Як до вас звертатися?" required></label>
+          <label>Сфера бізнесу<input type="text" name="business" placeholder="Наприклад, салон краси" required></label>
+          <label>Що потрібно?<textarea name="details" rows="3" placeholder="Сайт, запис, каталог або ще не визначилися" required></textarea></label>
+          <button class="button button-dark" type="submit">Написати в Telegram <span>↗</span></button>
+          <small>Після натискання відкриється Telegram із готовим текстом.</small>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer class="wrap"><a class="logo" href="#top">ОШ<i>.</i></a><p>© 2026 Олег Шатарський. Розробка сайтів.</p><div class="footlinks"><a href="https://t.me/Oleghshatarsky" target="_blank" rel="noreferrer">Telegram</a><a href="https://www.instagram.com/olegshatarskii/" target="_blank" rel="noreferrer">Instagram</a></div></footer>
-
-  <script>
-    document.getElementById('brief-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const data = new FormData(event.currentTarget);
-      const text = `Привіт, Олег! Мене звати ${data.get('name')}. Потрібен сайт для: ${data.get('business')}. ${data.get('details')}`;
-      window.open('https://t.me/Oleghshatarsky?text=' + encodeURIComponent(text), '_blank', 'noopener');
-    });
-  </script>
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/shtr-logo.png" alt="Логотип SHTR Studio"><span class="brand-name">SHTR<small>STUDIO</small></span></a>
+      <p>Сайти, які підсилюють бізнес.</p>
+      <a href="#top">На початок ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 SHTR Studio</span><span>Розробка сайтів для бізнесу в Україні</span></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
