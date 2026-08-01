@@ -19,7 +19,7 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.benefit-grid article, .project, .service-list article, .timeline article').forEach(item => {
+document.querySelectorAll('.benefit-grid article, .project, .service-list article, .timeline article, .seo-format-card, .seo-industry-card, .seo-step').forEach(item => {
   item.classList.add('reveal');
   observer.observe(item);
 });

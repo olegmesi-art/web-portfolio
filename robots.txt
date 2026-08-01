@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shtr-studio.github.io/web-portfolio/sitemap.xml

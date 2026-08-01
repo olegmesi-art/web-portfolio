@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/rozrobka-saitiv/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/rozrobka-saitiv/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/web-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/rozrobka-saitiv/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/web-development/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/rozrobka-saitiv/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/web-development/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/rozrobka-saitiv/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/demos/beauty/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/beauty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/beauty/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/demos/beauty/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/beauty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/beauty/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/demos/restaurant/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/restaurant/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/restaurant/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/demos/restaurant/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/restaurant/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/restaurant/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/demos/construction/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/construction/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/construction/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/demos/construction/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/construction/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/construction/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/demos/detailing/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/detailing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/detailing/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/demos/detailing/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/detailing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/detailing/"/>
+  </url>
+</urlset>
