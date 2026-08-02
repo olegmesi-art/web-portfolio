@@ -25,6 +25,11 @@ https://shtr-studio.github.io/web-portfolio/en/
   https://shtr-studio.github.io/web-portfolio/rozrobka-saitiv/
 - English service page:  
   https://shtr-studio.github.io/web-portfolio/en/web-development/
+- Корисні двомовні матеріали:
+  - «Сайт чи Instagram: що краще для бізнесу?»
+  - «Скільки коштує сайт для бізнесу у 2026 році?»
+  - «Який сайт потрібен салону краси?»
+- У `sitemap.xml` додано 18 українських та англійських URL.
 - Sitemap:  
   https://shtr-studio.github.io/web-portfolio/sitemap.xml
 - Robots:  

@@ -77,4 +77,46 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/demos/detailing/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/demos/detailing/"/>
   </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/blog/sait-chy-instagram/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/blog/sait-chy-instagram/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/blog/website-vs-instagram/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/blog/sait-chy-instagram/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/blog/website-vs-instagram/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/blog/sait-chy-instagram/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/blog/website-vs-instagram/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/blog/sait-chy-instagram/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/blog/skilky-koshtuie-sait/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/blog/skilky-koshtuie-sait/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/blog/how-much-does-a-website-cost/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/blog/skilky-koshtuie-sait/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/blog/how-much-does-a-website-cost/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/blog/skilky-koshtuie-sait/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/blog/how-much-does-a-website-cost/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/blog/skilky-koshtuie-sait/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/blog/sait-dlia-salonu-krasy/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/blog/sait-dlia-salonu-krasy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/blog/website-for-beauty-salon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/blog/sait-dlia-salonu-krasy/"/>
+  </url>
+  <url>
+    <loc>https://shtr-studio.github.io/web-portfolio/en/blog/website-for-beauty-salon/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://shtr-studio.github.io/web-portfolio/blog/sait-dlia-salonu-krasy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shtr-studio.github.io/web-portfolio/en/blog/website-for-beauty-salon/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shtr-studio.github.io/web-portfolio/blog/sait-dlia-salonu-krasy/"/>
+  </url>
 </urlset>
