@@ -412,6 +412,11 @@
         </div>
 
         <form class="cost-calculator" id="cost-calculator" data-language="uk">
+          <div class="calculator-console-head">
+            <span>SHTR / PROJECT ESTIMATOR</span>
+            <span><i></i> РОЗРАХУНОК У РЕАЛЬНОМУ ЧАСІ</span>
+          </div>
+          <div class="calculator-config">
           <fieldset class="calculator-step">
             <legend><span>01</span> Який сайт вам потрібен?</legend>
             <div class="calc-options calc-types">
@@ -443,12 +448,19 @@
             <label for="extra-pages"><span><b>03</b> Додаткові сторінки</span><small>Понад базовий обсяг · +1 200 ₴ за сторінку</small></label>
             <div class="number-control"><button type="button" data-page-action="minus" aria-label="Зменшити кількість">−</button><input id="extra-pages" name="extra-pages" type="number" value="0" min="0" max="20" inputmode="numeric"><button type="button" data-page-action="plus" aria-label="Збільшити кількість">+</button></div>
           </div>
+          </div>
 
           <div class="calculator-result" aria-live="polite">
-            <div><small>Орієнтовна вартість</small><output id="calculator-price">від 8 000 ₴</output></div>
-            <div><small>Орієнтовний строк</small><output id="calculator-time">5–7 робочих днів</output></div>
+            <div class="result-head"><span>SHTR<small>STUDIO</small></span><b><i></i> LIVE</b></div>
+            <p class="result-eyebrow">ВАШ ПОПЕРЕДНІЙ КОШТОРИС</p>
+            <div class="result-selection"><small>Обраний формат</small><strong id="calculator-type">Лендінг</strong></div>
+            <div class="result-metrics">
+              <div><small>Орієнтовна вартість</small><output id="calculator-price">від 8 000 ₴</output></div>
+              <div><small>Орієнтовний строк</small><output id="calculator-time">5–7 робочих днів</output></div>
+            </div>
             <p>* Це попередній розрахунок. Після короткого брифу зафіксуємо точну ціну, строк і перелік робіт.</p>
             <a class="button button-primary" id="calc-telegram" href="https://t.me/Oleghshatarsky" target="_blank" rel="noreferrer">Надіслати розрахунок у Telegram <span>↗</span></a>
+            <small class="result-safe"><i>✓</i> Без зобов’язань та автоматичної оплати</small>
           </div>
         </form>
       </div>

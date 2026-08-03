@@ -91,6 +91,7 @@ if (calculator) {
   const isEnglish = calculator.dataset.language === 'en';
   const priceOutput = calculator.querySelector('#calculator-price');
   const timeOutput = calculator.querySelector('#calculator-time');
+  const typeOutput = calculator.querySelector('#calculator-type');
   const telegramLink = calculator.querySelector('#calc-telegram');
   const pagesInput = calculator.querySelector('#extra-pages');
   const typeInputs = [...calculator.querySelectorAll('input[name="site-type"]')];
@@ -130,6 +131,7 @@ if (calculator) {
 
     const priceText = formatPrice(price);
     const timeText = formatTime(minDays, maxDays);
+    typeOutput.textContent = selectedType.dataset.label;
     priceOutput.textContent = priceText;
     timeOutput.textContent = timeText;
 
