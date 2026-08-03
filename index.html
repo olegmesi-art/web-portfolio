@@ -84,7 +84,7 @@
         <a href="#services">Послуги</a>
         <a href="#works">Роботи</a>
         <a href="#pricing">Ціни</a>
-        <a href="#process">Як працюємо</a>
+        <a href="#calculator">Калькулятор</a>
       </nav>
       <div class="language-switch" role="group" aria-label="Вибір мови">
         <span aria-current="page">UA</span>
@@ -286,19 +286,68 @@
     <section class="services-section section-pad" id="services">
       <div class="container">
         <div class="section-heading">
-          <div><p class="section-kicker">Що створюємо</p><h2>Рішення під завдання<br><span>вашого бізнесу.</span></h2></div>
-          <p>Від компактної презентації до повноцінного сайту з каталогом, онлайн-записом та інтеграціями.</p>
+          <div><p class="section-kicker">Повний комплекс послуг</p><h2>Від першої ідеї<br><span>до розвитку онлайн.</span></h2></div>
+          <p>Створюємо сайт, оформлюємо бренд, підключаємо потрібні сервіси та залишаємося поруч після запуску.</p>
         </div>
-        <div class="service-list">
-          <article><span>01</span><h3>Лендінг</h3><p>Одна сильна сторінка для послуги, реклами, спеціальної пропозиції або нового продукту.</p><b>Від ідеї до запуску</b></article>
-          <article><span>02</span><h3>Сайт для бізнесу</h3><p>Повна презентація компанії: послуги, команда, роботи, відгуки, ціни, контакти та заявки.</p><b>Найкраще для бренду</b></article>
-          <article><span>03</span><h3>Сайт з онлайн-записом</h3><p>Підключення EasyWeek, SimplyBook, Fresha або іншого сервісу, який зручно вести власнику.</p><b>Для сфери послуг</b></article>
-          <article><span>04</span><h3>Каталог / магазин</h3><p>Товари, категорії, фільтри, кошик, оплата й зручний процес оформлення замовлення.</p><b>Для продажів онлайн</b></article>
+        <div class="service-tabs" role="tablist" aria-label="Категорії послуг">
+          <button class="service-tab active" type="button" role="tab" aria-selected="true" aria-controls="services-development" data-service-tab="development"><span>01</span> Розробка <b>10</b></button>
+          <button class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="services-brand" data-service-tab="brand"><span>02</span> Бренд і контент <b>8</b></button>
+          <button class="service-tab" type="button" role="tab" aria-selected="false" aria-controls="services-growth" data-service-tab="growth"><span>03</span> Запуск і розвиток <b>13</b></button>
         </div>
+
+        <div class="service-panels">
+          <div class="service-panel active" id="services-development" role="tabpanel" data-service-panel="development">
+            <div class="service-catalog-grid">
+              <article class="service-card"><span>01</span><div><h3>Лендінг</h3><p>Одна сильна сторінка для послуги, реклами або нового продукту.</p></div><strong>від 8 000 ₴</strong></article>
+              <article class="service-card"><span>02</span><div><h3>Сайт-візитка</h3><p>Компактний сайт із інформацією про компанію, послуги та контакти.</p></div><strong>від 10 000 ₴</strong></article>
+              <article class="service-card"><span>03</span><div><h3>Корпоративний сайт</h3><p>Повна презентація бізнесу, напрямів, команди, кейсів і переваг.</p></div><strong>від 14 000 ₴</strong></article>
+              <article class="service-card"><span>04</span><div><h3>Сайт-каталог</h3><p>Категорії, картки, фільтри та заявки без складної системи оплати.</p></div><strong>від 18 000 ₴</strong></article>
+              <article class="service-card"><span>05</span><div><h3>Інтернет-магазин</h3><p>Каталог, кошик, оплата, доставка й керування замовленнями.</p></div><strong>від 25 000 ₴</strong></article>
+              <article class="service-card"><span>06</span><div><h3>Сайт з онлайн-записом</h3><p>Послуги, спеціалісти, прайс і підключення системи бронювання.</p></div><strong>від 18 000 ₴</strong></article>
+              <article class="service-card"><span>07</span><div><h3>Калькулятор або квіз</h3><p>Інтерактивний розрахунок, підбір послуги або збір заявки.</p></div><strong>від 3 000 ₴</strong></article>
+              <article class="service-card"><span>08</span><div><h3>Кабінет та адмінпанель</h3><p>Авторизація, робота з даними, замовленнями й ролями користувачів.</p></div><strong>від 25 000 ₴</strong></article>
+              <article class="service-card"><span>09</span><div><h3>Редизайн сайту</h3><p>Оновлення стилю, структури та мобільного вигляду без втрати змісту.</p></div><strong>від 7 000 ₴</strong></article>
+              <article class="service-card"><span>10</span><div><h3>Доопрацювання та перенесення</h3><p>Нові блоки, виправлення, перенесення на інший домен або хостинг.</p></div><strong>від 1 500 ₴</strong></article>
+            </div>
+          </div>
+
+          <div class="service-panel" id="services-brand" role="tabpanel" data-service-panel="brand" hidden>
+            <div class="service-catalog-grid">
+              <article class="service-card"><span>01</span><div><h3>Логотип і міністиль</h3><p>Знак, базові варіанти використання та візуальний напрям бренду.</p></div><strong>від 3 000 ₴</strong></article>
+              <article class="service-card"><span>02</span><div><h3>Кольори та шрифти</h3><p>Візуальна система, яка робить бізнес упізнаваним і послідовним.</p></div><strong>від 1 500 ₴</strong></article>
+              <article class="service-card"><span>03</span><div><h3>Тексти для сайту</h3><p>Структуровані заголовки, описи послуг, переваги та заклики до дії.</p></div><strong>від 2 000 ₴</strong></article>
+              <article class="service-card"><span>04</span><div><h3>Друга мовна версія</h3><p>Переклад, локалізація та окрема SEO-структура українською й англійською.</p></div><strong>від 2 500 ₴</strong></article>
+              <article class="service-card"><span>05</span><div><h3>Обробка фотографій</h3><p>Колір, кадрування, очищення фону та підготовка для швидкого сайту.</p></div><strong>від 1 000 ₴ / 10 фото</strong></article>
+              <article class="service-card"><span>06</span><div><h3>Банери та графіка</h3><p>Обкладинки, рекламні банери, іконки та візуали під стиль бренду.</p></div><strong>від 800 ₴</strong></article>
+              <article class="service-card"><span>07</span><div><h3>Дизайн Instagram</h3><p>Єдиний стиль дописів і Stories для професійного вигляду профілю.</p></div><strong>від 2 500 ₴ / 10 макетів</strong></article>
+              <article class="service-card"><span>08</span><div><h3>Картки товарів і послуг</h3><p>Структура, тексти й дизайн для каталогу, магазину або соцмереж.</p></div><strong>від 1 500 ₴ / 10 карток</strong></article>
+            </div>
+          </div>
+
+          <div class="service-panel" id="services-growth" role="tabpanel" data-service-panel="growth" hidden>
+            <div class="service-catalog-grid">
+              <article class="service-card"><span>01</span><div><h3>Домен і хостинг</h3><p>Допомога з вибором, реєстрацією, підключенням і HTTPS.</p></div><strong>від 1 000 ₴</strong></article>
+              <article class="service-card"><span>02</span><div><h3>Корпоративна пошта</h3><p>Адреса на власному домені та базове налаштування поштової скриньки.</p></div><strong>від 1 000 ₴</strong></article>
+              <article class="service-card"><span>03</span><div><h3>Базова SEO-оптимізація</h3><p>Метадані, заголовки, структура, sitemap, robots і підготовка до Google.</p></div><strong>від 3 000 ₴</strong></article>
+              <article class="service-card"><span>04</span><div><h3>Google Search Console</h3><p>Підтвердження сайту, sitemap та надсилання сторінок на індексацію.</p></div><strong>від 800 ₴</strong></article>
+              <article class="service-card"><span>05</span><div><h3>Аналітика та Pixel</h3><p>Google Analytics, Tag Manager і Meta Pixel для вимірювання реклами.</p></div><strong>від 1 500 ₴</strong></article>
+              <article class="service-card"><span>06</span><div><h3>Заявки в Telegram та email</h3><p>Форми, повідомлення й автоматична передача контактів клієнта.</p></div><strong>від 1 500 ₴</strong></article>
+              <article class="service-card"><span>07</span><div><h3>Інтеграція онлайн-запису</h3><p>EasyWeek, SimplyBook, Fresha або інша система у власному акаунті.</p></div><strong>від 2 500 ₴</strong></article>
+              <article class="service-card"><span>08</span><div><h3>Інтеграція CRM</h3><p>Передача заявок і замовлень у KeyCRM, KeepinCRM або іншу систему.</p></div><strong>від 4 000 ₴</strong></article>
+              <article class="service-card"><span>09</span><div><h3>Оплата та доставка</h3><p>Платіжний сервіс, Нова пошта та сценарій оформлення замовлення.</p></div><strong>від 4 000 ₴</strong></article>
+              <article class="service-card"><span>10</span><div><h3>Google Business Profile</h3><p>Оформлення профілю, контакти, категорії, фото й посилання на сайт.</p></div><strong>від 2 000 ₴</strong></article>
+              <article class="service-card"><span>11</span><div><h3>Оптимізація швидкості</h3><p>Стиснення ресурсів, перевірка завантаження та основних вебпоказників.</p></div><strong>від 2 500 ₴</strong></article>
+              <article class="service-card"><span>12</span><div><h3>Резервні копії й оновлення</h3><p>Разове технічне обслуговування, перевірка та безпечне оновлення.</p></div><strong>від 1 500 ₴</strong></article>
+              <article class="service-card"><span>13</span><div><h3>Щомісячна підтримка</h3><p>Дрібні зміни, контроль роботи, оновлення інформації та консультації.</p></div><strong>від 2 500 ₴ / місяць</strong></article>
+            </div>
+          </div>
+        </div>
+
         <div class="service-seo-link">
-          <p>Дізнайтеся, що входить у розробку, як проходить робота та який формат сайту підійде вашому бізнесу.</p>
-          <a class="button button-primary" href="rozrobka-saitiv/">Розробка сайтів під ключ <span>↗</span></a>
+          <p>Не знаєте, які послуги потрібні? Калькулятор сформує орієнтовний бюджет і строк за кілька хвилин.</p>
+          <a class="button button-primary" href="#calculator">Розрахувати вартість <span>↗</span></a>
         </div>
+        <p class="services-disclaimer">* Усі ціни стартові. Остаточна вартість залежить від обсягу, матеріалів та інтеграцій. Тарифи сторонніх сервісів оплачуються власником напряму.</p>
       </div>
     </section>
 
@@ -346,6 +395,62 @@
           </div>
         </div>
         <p class="pricing-note">* Вартість сторонніх сервісів, домену та платного хостингу не входить у розробку й оплачується власником напряму.</p>
+      </div>
+    </section>
+
+    <section class="calculator-section section-pad" id="calculator">
+      <div class="container calculator-shell">
+        <div class="calculator-intro">
+          <p class="section-kicker">Онлайн-калькулятор</p>
+          <h2>Дізнайтеся орієнтовну<br><span>вартість вашого сайту.</span></h2>
+          <p>Оберіть формат і потрібні можливості. Калькулятор одразу покаже стартовий бюджет та строк, а результат можна надіслати нам у Telegram.</p>
+          <div class="calculator-trust">
+            <span><b>01</b> Розрахунок без реєстрації</span>
+            <span><b>02</b> Жодних прихованих платежів</span>
+            <span><b>03</b> Точна пропозиція після брифу</span>
+          </div>
+        </div>
+
+        <form class="cost-calculator" id="cost-calculator" data-language="uk">
+          <fieldset class="calculator-step">
+            <legend><span>01</span> Який сайт вам потрібен?</legend>
+            <div class="calc-options calc-types">
+              <label class="calc-choice"><input type="radio" name="site-type" value="landing" data-price="8000" data-days-min="5" data-days-max="7" data-label="Лендінг" data-includes="" checked><span><b>Лендінг</b><small>від 8 000 ₴ · 5–7 днів</small></span><i></i></label>
+              <label class="calc-choice"><input type="radio" name="site-type" value="brochure" data-price="10000" data-days-min="6" data-days-max="10" data-label="Сайт-візитка" data-includes=""><span><b>Сайт-візитка</b><small>від 10 000 ₴ · 6–10 днів</small></span><i></i></label>
+              <label class="calc-choice"><input type="radio" name="site-type" value="business" data-price="14000" data-days-min="7" data-days-max="14" data-label="Сайт компанії" data-includes="language"><span><b>Сайт компанії</b><small>від 14 000 ₴ · 7–14 днів</small></span><i></i></label>
+              <label class="calc-choice"><input type="radio" name="site-type" value="booking" data-price="18000" data-days-min="10" data-days-max="18" data-label="Сайт з онлайн-записом" data-includes="booking"><span><b>Онлайн-запис</b><small>від 18 000 ₴ · 10–18 днів</small></span><i></i></label>
+              <label class="calc-choice"><input type="radio" name="site-type" value="catalogue" data-price="18000" data-days-min="10" data-days-max="18" data-label="Сайт-каталог" data-includes=""><span><b>Сайт-каталог</b><small>від 18 000 ₴ · 10–18 днів</small></span><i></i></label>
+              <label class="calc-choice"><input type="radio" name="site-type" value="store" data-price="25000" data-days-min="15" data-days-max="30" data-label="Інтернет-магазин" data-includes="payment"><span><b>Інтернет-магазин</b><small>від 25 000 ₴ · 15–30 днів</small></span><i></i></label>
+              <label class="calc-choice"><input type="radio" name="site-type" value="custom" data-price="30000" data-days-min="20" data-days-max="40" data-label="Індивідуальний вебсервіс" data-includes=""><span><b>Вебсервіс / кабінет</b><small>від 30 000 ₴ · 20–40 днів</small></span><i></i></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="calculator-step">
+            <legend><span>02</span> Додаткові можливості</legend>
+            <div class="calc-options calc-addons">
+              <label class="calc-addon"><input type="checkbox" data-addon-key="language" data-price="2500" data-days="2" data-label="Друга мовна версія"><span><b>Друга мова</b><small>+2 500 ₴</small></span><i>+</i></label>
+              <label class="calc-addon"><input type="checkbox" data-addon-key="brand" data-price="3000" data-days="2" data-label="Логотип і міністиль"><span><b>Логотип і міністиль</b><small>+3 000 ₴</small></span><i>+</i></label>
+              <label class="calc-addon"><input type="checkbox" data-addon-key="copy" data-price="2000" data-days="2" data-label="Тексти для сайту"><span><b>Тексти для сайту</b><small>+2 000 ₴</small></span><i>+</i></label>
+              <label class="calc-addon"><input type="checkbox" data-addon-key="booking" data-price="2500" data-days="2" data-label="Інтеграція онлайн-запису"><span><b>Онлайн-запис</b><small>+2 500 ₴</small></span><i>+</i></label>
+              <label class="calc-addon"><input type="checkbox" data-addon-key="crm" data-price="4000" data-days="3" data-label="Інтеграція CRM"><span><b>CRM</b><small>+4 000 ₴</small></span><i>+</i></label>
+              <label class="calc-addon"><input type="checkbox" data-addon-key="payment" data-price="4000" data-days="3" data-label="Оплата та доставка"><span><b>Оплата й доставка</b><small>+4 000 ₴</small></span><i>+</i></label>
+              <label class="calc-addon"><input type="checkbox" data-addon-key="analytics" data-price="1500" data-days="1" data-label="Аналітика та Pixel"><span><b>Аналітика та Pixel</b><small>+1 500 ₴</small></span><i>+</i></label>
+              <label class="calc-addon"><input type="checkbox" data-addon-key="social" data-price="2500" data-days="2" data-label="Дизайн Instagram"><span><b>Дизайн Instagram</b><small>+2 500 ₴</small></span><i>+</i></label>
+            </div>
+          </fieldset>
+
+          <div class="calculator-pages">
+            <label for="extra-pages"><span><b>03</b> Додаткові сторінки</span><small>Понад базовий обсяг · +1 200 ₴ за сторінку</small></label>
+            <div class="number-control"><button type="button" data-page-action="minus" aria-label="Зменшити кількість">−</button><input id="extra-pages" name="extra-pages" type="number" value="0" min="0" max="20" inputmode="numeric"><button type="button" data-page-action="plus" aria-label="Збільшити кількість">+</button></div>
+          </div>
+
+          <div class="calculator-result" aria-live="polite">
+            <div><small>Орієнтовна вартість</small><output id="calculator-price">від 8 000 ₴</output></div>
+            <div><small>Орієнтовний строк</small><output id="calculator-time">5–7 робочих днів</output></div>
+            <p>* Це попередній розрахунок. Після короткого брифу зафіксуємо точну ціну, строк і перелік робіт.</p>
+            <a class="button button-primary" id="calc-telegram" href="https://t.me/Oleghshatarsky" target="_blank" rel="noreferrer">Надіслати розрахунок у Telegram <span>↗</span></a>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -440,7 +545,7 @@
           <label>Ваше ім’я<input type="text" name="name" placeholder="Як до вас звертатися?" required></label>
           <label>Сфера бізнесу<input type="text" name="business" placeholder="Наприклад, салон краси" required></label>
           <label>Instagram або телефон<input type="text" name="contact" placeholder="Як з вами зв’язатися?" required></label>
-          <label>Формат сайту<select name="format" required><option value="Ще не визначився/визначилася">Ще не визначилися</option><option value="Лендінг">Лендінг</option><option value="Сайт компанії">Сайт компанії</option><option value="Сайт з онлайн-записом">Сайт з онлайн-записом</option><option value="Каталог або магазин">Каталог або магазин</option></select></label>
+          <label>Формат сайту<select name="format" required><option value="Ще не визначився/визначилася">Ще не визначилися</option><option value="Лендінг">Лендінг</option><option value="Сайт-візитка">Сайт-візитка</option><option value="Сайт компанії">Сайт компанії</option><option value="Сайт з онлайн-записом">Сайт з онлайн-записом</option><option value="Сайт-каталог">Сайт-каталог</option><option value="Інтернет-магазин">Інтернет-магазин</option><option value="Вебсервіс або кабінет">Вебсервіс або кабінет</option><option value="Редизайн сайту">Редизайн сайту</option></select></label>
           <label>Що потрібно?<textarea name="details" rows="3" placeholder="Сайт, запис, каталог або ще не визначилися" required></textarea></label>
           <button class="button button-dark" type="submit">Написати в Telegram <span>↗</span></button>
           <small>Після натискання відкриється Telegram із готовим текстом.</small>
@@ -457,6 +562,7 @@
     </div>
     <div class="container footer-bottom"><span>© 2026 SHTR Studio</span><span>Розробка сайтів для бізнесу в Україні</span></div>
   </footer>
+  <a class="mobile-sticky-cta" href="#calculator"><span>Розрахувати сайт</span><b>↗</b></a>
   <script src="script.js"></script>
 </body>
 </html>
