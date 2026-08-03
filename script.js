@@ -45,7 +45,7 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.compare-card, .benefit-grid article, .project, .service-list article, .timeline article, .seo-format-card, .seo-industry-card, .seo-result-card, .seo-step, .insight-card, .related-card').forEach(item => {
+document.querySelectorAll('.compare-card, .benefit-grid article, .studio-stats article, .project, .service-list article, .price-card, .included-grid span, .timeline article, .concept-steps article, .seo-format-card, .seo-industry-card, .seo-result-card, .seo-step, .insight-card, .related-card').forEach(item => {
   item.classList.add('reveal');
   observer.observe(item);
 });
@@ -72,7 +72,7 @@ document.getElementById('brief-form')?.addEventListener('submit', event => {
   const data = new FormData(event.currentTarget);
   const isEnglish = document.documentElement.lang === 'en';
   const text = isEnglish
-    ? `Hello, SHTR Studio! My name is ${data.get('name')}. Business sector: ${data.get('business')}. I need: ${data.get('details')}`
-    : `Вітаю, SHTR Studio! Мене звати ${data.get('name')}. Сфера бізнесу: ${data.get('business')}. Потрібно: ${data.get('details')}`;
+    ? `Hello, SHTR Studio! My name is ${data.get('name')}. Business sector: ${data.get('business')}. Contact: ${data.get('contact')}. Website format: ${data.get('format')}. I need: ${data.get('details')}`
+    : `Вітаю, SHTR Studio! Мене звати ${data.get('name')}. Сфера бізнесу: ${data.get('business')}. Контакт: ${data.get('contact')}. Формат сайту: ${data.get('format')}. Потрібно: ${data.get('details')}`;
   window.open(`https://t.me/Oleghshatarsky?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
 });

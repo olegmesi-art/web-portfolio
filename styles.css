@@ -868,3 +868,89 @@ main{overflow:hidden}
   *,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none;filter:none}
 }
+
+/* =========================================================
+   SHTR STUDIO — TRUST, PRICING AND FREE CONCEPT
+   ========================================================= */
+.studio-section{position:relative;overflow:hidden;background:#fff}
+.studio-section:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(40,104,255,.12);border-radius:50%;left:-300px;top:70px;box-shadow:0 0 0 86px rgba(40,104,255,.025)}
+.studio-grid{position:relative;display:grid;grid-template-columns:.7fr 1.3fr;gap:100px;align-items:center}
+.studio-mark{min-height:520px;border-radius:var(--radius-xl,32px);padding:54px;color:#fff;background:radial-gradient(circle at 80% 15%,rgba(71,128,255,.4),transparent 32%),linear-gradient(145deg,#0c1018,#06080c);display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 38px 90px rgba(7,9,13,.2);position:relative;overflow:hidden}
+.studio-mark:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-90px;top:-90px;box-shadow:0 0 0 55px rgba(255,255,255,.025)}
+.studio-mark img{position:absolute;left:54px;top:54px;width:92px;height:92px;border-radius:24px;object-fit:cover;border:1px solid rgba(255,255,255,.2);z-index:1}
+.studio-mark span{font-family:"Space Grotesk",sans-serif;font-size:clamp(64px,8vw,118px);line-height:.78;letter-spacing:-.09em;position:relative;z-index:1}
+.studio-mark small{margin-top:27px;color:#9db8ff;font-size:10px;font-weight:800;letter-spacing:.31em;position:relative;z-index:1}
+.studio-copy h2{max-width:790px;margin:24px 0 36px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(45px,5vw,72px);font-weight:400;line-height:1.01;letter-spacing:-.055em}
+.studio-copy h2 span{color:var(--blue);font-style:italic}
+.studio-copy>p:not(.section-kicker){max-width:820px;color:var(--muted);font-size:16px;line-height:1.82;margin-bottom:18px}
+.studio-stats{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin-top:75px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.studio-stats article{min-height:190px;padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;background:#faf9f6}
+.studio-stats strong{font-family:Georgia,"Times New Roman",serif;font-size:54px;font-weight:400;letter-spacing:-.06em;color:var(--blue)}
+.studio-stats span{max-width:210px;color:#555861;font-size:12px;font-weight:700;line-height:1.55}
+
+.pricing-section{color:#fff;background:radial-gradient(circle at 90% 4%,rgba(42,105,255,.25),transparent 25%),linear-gradient(180deg,#0a0d13,#06080c)}
+.pricing-section .section-kicker{color:#a5abc0}
+.pricing-section .section-heading>p{color:#aeb4c0}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+.price-card{position:relative;min-height:610px;padding:37px;border:1px solid rgba(255,255,255,.13);border-radius:var(--radius-lg,26px);background:rgba(255,255,255,.035);display:flex;flex-direction:column;transition:transform .35s,border-color .35s,box-shadow .35s}
+.price-card:hover{transform:translateY(-9px);border-color:rgba(92,144,255,.8);box-shadow:0 35px 85px rgba(0,0,0,.3)}
+.price-card.featured{background:radial-gradient(circle at 90% 5%,rgba(255,255,255,.22),transparent 32%),linear-gradient(145deg,#3978ff,#1042bb);border-color:transparent;box-shadow:0 30px 80px rgba(23,75,199,.32)}
+.popular-label{position:absolute;top:0;right:28px;transform:translateY(-50%);padding:9px 14px;border-radius:999px;background:var(--blue-soft,#8badff);color:#07102d;font-size:8px;font-weight:900;letter-spacing:.13em}
+.price-card-top{display:flex;align-items:center;justify-content:space-between;color:#969daa;font-size:9px;letter-spacing:.14em}
+.price-card.featured .price-card-top{color:#dce6ff}
+.price-card h3{margin:65px 0 22px;font-family:Georgia,"Times New Roman",serif;font-size:40px;font-weight:400;letter-spacing:-.045em}
+.price-card .price{margin:0;font-size:13px;color:#a8afbb}
+.price-card .price strong{display:block;margin-top:8px;color:#fff;font-family:"Space Grotesk",sans-serif;font-size:36px;letter-spacing:-.055em}
+.price-card.featured .price,.price-card.featured .price-time{color:#dbe5ff}
+.price-time{margin:12px 0 29px;color:#89909d;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.price-card ul{list-style:none;margin:0 0 36px;padding:0;border-top:1px solid rgba(255,255,255,.13)}
+.price-card li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);color:#b9bec8;font-size:12px;line-height:1.45}
+.price-card li:before{content:"✓";margin-right:10px;color:var(--blue-soft,#8badff)}
+.price-card.featured li{color:#edf2ff}.price-card.featured li:before{color:#dce7ff}
+.price-card>a{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid rgba(255,255,255,.22);color:#fff;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.price-card>a span{color:var(--blue-soft,#8badff);font-size:17px}.price-card.featured>a span{color:#fff}
+.included-shell{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px;align-items:start;margin-top:70px;padding:48px;border:1px solid rgba(255,255,255,.13);border-radius:var(--radius-xl,32px);background:rgba(255,255,255,.035)}
+.included-intro h3{max-width:470px;margin:22px 0 0;font-family:Georgia,"Times New Roman",serif;font-size:37px;font-weight:400;line-height:1.08;letter-spacing:-.04em}
+.included-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,255,255,.13);border-left:1px solid rgba(255,255,255,.13)}
+.included-grid span{min-height:74px;padding:20px;border-right:1px solid rgba(255,255,255,.13);border-bottom:1px solid rgba(255,255,255,.13);color:#d2d6df;font-size:12px;font-weight:700;line-height:1.45}
+.included-grid b{display:block;margin-bottom:8px;color:var(--blue-soft,#8badff);font-size:8px;letter-spacing:.12em}
+.pricing-note{margin:20px 0 0;color:#777f8d;font-size:10px;line-height:1.65}
+
+.concept-section{background:#f3f1ec}
+.concept-shell{position:relative;display:grid;grid-template-columns:1.06fr .94fr;gap:80px;padding:70px;border-radius:var(--radius-xl,32px);color:#fff;background:radial-gradient(circle at 10% 0,rgba(255,255,255,.2),transparent 32%),linear-gradient(135deg,#3978ff,#0b3dbc 72%);overflow:hidden;box-shadow:0 38px 100px rgba(19,71,188,.24)}
+.concept-shell:after{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(255,255,255,.17);border-radius:50%;right:-270px;bottom:-300px;box-shadow:0 0 0 70px rgba(255,255,255,.035)}
+.concept-copy,.concept-steps{position:relative;z-index:1}
+.concept-section .section-kicker{color:#d9e4ff}
+.concept-copy h2{margin:23px 0 27px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(45px,5vw,70px);font-weight:400;line-height:1.01;letter-spacing:-.055em}
+.concept-copy h2 span{font-style:italic;color:#fff}
+.concept-copy>p:not(.section-kicker){max-width:650px;color:#e0e8ff;font-size:15px;line-height:1.75}
+.concept-copy .button{width:auto;margin-top:20px;border-color:#fff;background:#fff;color:var(--ink);border-radius:999px}.concept-copy .button span{color:var(--blue)}
+.concept-steps{display:flex;flex-direction:column;justify-content:center}
+.concept-steps article{display:grid;grid-template-columns:48px 1fr;gap:20px;padding:25px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.concept-steps article:first-child{border-top:1px solid rgba(255,255,255,.18)}
+.concept-steps>article>span{width:42px;height:42px;border:1px solid rgba(255,255,255,.3);border-radius:50%;display:grid;place-items:center;font-size:9px;font-weight:800}
+.concept-steps h3{margin:1px 0 9px;font-family:"Space Grotesk",sans-serif;font-size:20px}
+.concept-steps p{margin:0;color:#dce6ff;font-size:12px;line-height:1.6}
+
+.brief-form select{display:block;width:100%;border:0;border-bottom:1px solid #3a3f4b;background:transparent;color:#fff;padding:10px 0;outline:none;border-radius:0}
+.brief-form select:focus{border-color:var(--blue-soft,#8badff)}
+.brief-form select option{color:#fff;background:#0b0d12}
+
+@media(max-width:1100px){
+  .studio-grid{gap:55px}.studio-mark{min-height:470px;padding:42px}.studio-mark img{left:42px;top:42px}
+  .pricing-grid{grid-template-columns:1fr 1fr}.price-card:last-child{grid-column:1/-1;min-height:520px}.price-card:last-child ul{display:grid;grid-template-columns:1fr 1fr;column-gap:25px}
+  .included-shell{gap:40px;padding:40px}.concept-shell{gap:50px;padding:58px}
+}
+
+@media(max-width:820px){
+  .studio-grid,.included-shell,.concept-shell{grid-template-columns:1fr}
+  .studio-mark{min-height:400px}.studio-copy h2{font-size:56px}.studio-stats{grid-template-columns:1fr 1fr}
+  .pricing-grid{grid-template-columns:1fr}.price-card,.price-card:last-child{grid-column:auto;min-height:560px}.price-card:last-child ul{display:block}
+  .included-shell{gap:38px}.concept-shell{gap:45px}.concept-copy .button{width:max-content}
+}
+
+@media(max-width:600px){
+  .studio-mark{min-height:340px;padding:30px;border-radius:24px}.studio-mark img{left:30px;top:30px;width:72px;height:72px;border-radius:19px}.studio-mark span{font-size:72px}.studio-copy h2{font-size:44px}.studio-stats{margin-top:50px}.studio-stats article{min-height:165px;padding:22px}.studio-stats strong{font-size:43px}.studio-stats span{font-size:10px}
+  .price-card,.price-card:last-child{min-height:0;padding:28px;border-radius:24px}.price-card h3{margin-top:53px;font-size:35px}.price-card .price strong{font-size:31px}.included-shell{margin-top:48px;padding:28px;border-radius:24px}.included-intro h3{font-size:31px}.included-grid{grid-template-columns:1fr}.included-grid span{min-height:67px}
+  .concept-shell{padding:34px 25px;border-radius:24px}.concept-copy h2{font-size:43px}.concept-copy .button{width:100%;border-radius:999px}.concept-steps article{grid-template-columns:42px 1fr;gap:14px}
+}
